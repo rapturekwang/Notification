@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_custom_notification_photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon_fab_camera"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:layout_toRightOf="@+id/image_custom_notification_photo">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/icon_app"/>
+
+                <TextView
+                    android:id="@+id/text_custom_notification_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="밥타임\n냉장고를 부탁해!"
+                    android:textSize="16dp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_custom_notification_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="얼큰한 국물이 생각날땐 - 부추 순두부 찌개"
+                android:lines="2"
+                android:ellipsize="end"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_custom_notification_codi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="우리집 냉장고속 계란, 순두부를 이용해서 바로 마들수 있는 요리를 소개합니다"
+                android:layout_marginTop="5dp"
+                android:lines="2"
+                android:ellipsize="end"
+                android:textSize="14sp"
+                android:textColor="#5a5a5a"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_custom_notification_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:text="오후 5:00"
+            android:textSize="14sp"
+            android:textColor="#5a5a5a" />
+
+    </RelativeLayout>
+</LinearLayout>
